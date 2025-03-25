@@ -6,10 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar';
 import Register from './Register';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import Login from './Login'; //引入login畫面
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
   <React.StrictMode>
     <Router>
       <div className="App">
@@ -18,10 +17,12 @@ root.render(
           <Route path="/" element={<h2>歡迎來到首頁</h2>} />
           <Route path="/app" element={<App />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/Login" element={<Login />} />
         </Routes>
       </div>
     </Router>
-    <App />
+    {/* <App /> */}
+    {/* <Register /> */}
   </React.StrictMode>
 );
 

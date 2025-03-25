@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import './styles.css';
 
 // 假設的靜態用戶資料，包含多個用戶
 const initialUsers = [
